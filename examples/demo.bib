@@ -1,0 +1,40 @@
+% Demo bibliography with deliberate mistakes, for trying the scripts:
+%   python scripts/verify_bib.py examples/demo.bib
+% Expected: resnet FAIL (invented co-author), dit FAIL (wrong venue), ghost FAIL (paper does not exist),
+%           adam WARN (published at ICLR 2015 but cited as a preprint), attention WARN (venue needs an index check).
+
+@inproceedings{resnet,
+  title     = {Deep Residual Learning for Image Recognition},
+  author    = {He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian and Smith, John},
+  booktitle = {CVPR},
+  year      = {2016},
+  note      = {arXiv:1512.03385}
+}
+
+@inproceedings{dit,
+  title     = {Scalable Diffusion Models with Transformers},
+  author    = {Peebles, William and Xie, Saining},
+  booktitle = {NeurIPS},
+  year      = {2023}
+}
+
+@inproceedings{attention,
+  title     = {Attention Is All You Need},
+  author    = {Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N. and Kaiser, Lukasz and Polosukhin, Illia},
+  booktitle = {NeurIPS},
+  year      = {2017}
+}
+
+@article{adam,
+  title   = {Adam: A Method for Stochastic Optimization},
+  author  = {Kingma, Diederik P. and Ba, Jimmy},
+  journal = {arXiv preprint arXiv:1412.6980},
+  year    = {2014}
+}
+
+@article{ghost,
+  title   = {Adaptive Spectral Token Routing for Long-Horizon Video Diffusion},
+  author  = {Lee, Ann and Kumar, Raj},
+  journal = {arXiv preprint arXiv:2409.99999},
+  year    = {2024}
+}
